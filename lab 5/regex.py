@@ -29,7 +29,7 @@ def fourth(text):
 
 
 def fifth(text):
-    x = re.findall(r'^a.*b$', text)
+    x = re.findall(r'\ba\w*b\b', text)
     return x
 print(fifth(text))
 
